@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BU SHOP - Simple online shopping for everyday essentials.">
+    <title>BU SHOP | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">BU SHOP<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle" aria-label="Switch color theme">☾</button></li>
+                <li><button class="nav-action sign-in-button" type="button" aria-label="Sign in"><span class="nav-action-icon">♙</span> Sign in</button></li>
+                <li><button class="nav-action wishlist-button" type="button" aria-label="Wishlist"><span class="nav-action-icon">♡</span> Wish list <span id="wishlistCount">0</span></button></li>
+                <li><button class="nav-action cart-button" type="button" aria-label="Shopping cart"><span class="nav-action-icon">🛒</span> Cart <span id="cartCount">0</span></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="eyebrow">NEW COLLECTION 2026</span>
+                    <h1>Simple style.<br><span>Better everyday.</span></h1>
+                    <p>Discover quality essentials, modern favorites, and everyday products at prices you'll love.</p>
+                    <div class="hero-buttons">
+                        <a href="#shop" class="btn btn-primary">Shop Now ↗</a>
+                        <a href="#about" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong>500+</strong><small>Products</small></div>
+                        <div><strong>1K+</strong><small>Happy Customers</small></div>
+                        <div><strong>24/7</strong><small>Support</small></div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="shop-preview">
+                        <span class="preview-label">POPULAR PICK</span>
+                        <div class="preview-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=95" alt="Premium red top-selling Street Sneakers">
+                        </div>
+                        <div class="preview-info">
+                            <div><small>BU Essentials</small><strong>Street Sneakers</strong></div>
+                            <strong>$49</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="shop">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">BU SHOP COLLECTION</span>
+                    <h2>Popular <span>Products</span></h2>
+                    <p>Thoughtfully selected items for your everyday life.</p>
+                </div>
+
+                <div class="service-grid">
+                    <article class="service-card">
+                        <div class="product-art product-one">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85" alt="Minimal wristwatch">
+                        </div>
+                        <span class="card-number">ACCESSORIES</span>
+                        <h3>Classic Watch</h3>
+                        <p>A clean, modern watch made for every occasion.</p>
+                        <div class="product-row"><strong>$79</strong><button class="add-cart" type="button">Add to cart</button></div>
+                    </article>
+
+                    <article class="service-card featured">
+                        <div class="product-art product-two">
+                            <span class="top-seller-badge">TOP SELLER</span>
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=95" alt="Premium red top-selling Street Sneakers">
+                        </div>
+                        <span class="card-number">FOOTWEAR • BEST SELLER</span>
+                        <h3>Street Sneakers</h3>
+                        <p>Comfortable everyday sneakers with a fresh look.</p>
+                        <div class="product-row"><strong>$64</strong><button class="add-cart" type="button">Add to cart</button></div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="product-art product-three">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Wireless over-ear headphones">
+                        </div>
+                        <span class="card-number">TECH</span>
+                        <h3>Wireless Headphones</h3>
+                        <p>Clear sound and all-day comfort in one simple design.</p>
+                        <div class="product-row"><strong>$89</strong><button class="add-cart" type="button">Add to cart</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="about-image">
+                        <span>CURATED FOR YOU</span>
+                        <strong>BUY<br>BETTER.</strong>
+                        <span>QUALITY • VALUE • STYLE</span>
+                    </div>
+                    <div class="about-badge">BU<br>✦<br>SHOP</div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">ABOUT BU SHOP</span>
+                    <h2>Everything you need.<br><span>Nothing you don't.</span></h2>
+                    <p>BU SHOP makes finding good products simple. We bring together useful, attractive, and reliable items in one easy-to-shop place.</p>
+                    <div class="about-points">
+                        <div>✓ Quality checked products</div>
+                        <div>✓ Secure and easy checkout</div>
+                        <div>✓ Fast customer support</div>
+                    </div>
+                    <a href="#shop" class="btn btn-primary">Browse Products ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <span class="eyebrow">CUSTOMER SUPPORT</span>
+                    <h2>Need a <span>hand?</span></h2>
+                    <p>Questions about an order or product? Our team is ready to help.</p>
+                    <div class="contact-detail"><span>✉</span><div><small>Email us</small><p>hello@bushop.example</p></div></div>
+                    <div class="contact-detail"><span>⌖</span><div><small>Visit us</small><p>Dhaka, Bangladesh</p></div></div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Enter your name" required><small class="error-message" id="nameError"></small></div>
+                        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="you@example.com" required><small class="error-message" id="emailError"></small></div>
+                    </div>
+                    <div class="form-group"><label for="message">Your Message</label><textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea><small class="error-message" id="messageError"></small></div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message ↗</button>
+                    <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+                    <p class="form-note">Demo form: no message is sent to a server.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="premium section" id="premium">
+            <div class="container premium-grid">
+                <div class="premium-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=95" alt="Premium BU SHOP fashion and accessories collection">
+                    <div class="premium-image-label">
+                        <small>BU SELECT</small>
+                        <strong>Premium Collection</strong>
+                    </div>
+                </div>
+
+                <div class="premium-content">
+                    <span class="eyebrow">BU PREMIUM EDIT</span>
+                    <h2>Elevated essentials,<br><span>made to stand out.</span></h2>
+                    <p>Discover our carefully selected premium collection, featuring timeless designs, exceptional quality, and everyday comfort.</p>
+                    <div class="premium-features">
+                        <div><strong>01</strong><span>Premium quality</span></div>
+                        <div><strong>02</strong><span>Exclusive styles</span></div>
+                        <div><strong>03</strong><span>Limited collection</span></div>
+                    </div>
+                    <a href="#shop" class="btn btn-primary">Explore Premium ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews section" id="reviews">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">CUSTOMER REVIEWS</span>
+                    <h2>Honest words from <span>our customers</span></h2>
+                    <p>Real-style feedback that helps us improve every shopping experience.</p>
+                </div>
+
+                <div class="review-grid">
+                    <article class="review-card review-positive">
+                        <div class="review-status"><span>★★★★★</span><strong>Excellent</strong></div>
+                        <p>“The sneakers arrived quickly and look even better in person. The quality and comfort exceeded my expectations.”</p>
+                        <div class="review-author">
+                            <div class="review-avatar">AR</div>
+                            <div><strong>Ayesha Rahman</strong><small>Verified buyer</small></div>
+                        </div>
+                    </article>
+
+                    <article class="review-card review-positive">
+                        <div class="review-status"><span>★★★★☆</span><strong>Very Good</strong></div>
+                        <p>“Great product selection and an easy checkout experience. My order was packed nicely and exactly as shown.”</p>
+                        <div class="review-author">
+                            <div class="review-avatar">NI</div>
+                            <div><strong>Nafis Islam</strong><small>Verified buyer</small></div>
+                        </div>
+                    </article>
+
+                    <article class="review-card review-negative">
+                        <div class="review-status"><span>★★★☆☆</span><strong>Needs Improvement</strong></div>
+                        <p>“The watch looks great, but delivery took longer than expected. Better tracking updates would improve the experience.”</p>
+                        <div class="review-author">
+                            <div class="review-avatar">SH</div>
+                            <div><strong>Sadia Hasan</strong><small>Verified buyer</small></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">BU SHOP<span>.</span></a>
+                <p>Simple shopping, better everyday.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="#shop">Shop</a>
+                <a href="#about">About us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-column footer-social">
+                <h2>Follow us</h2>
+                <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+        </div>
+
+        <section class="payment-methods" aria-labelledby="paymentTitle">
+            <div class="container">
+                <div class="payment-heading">
+                    <span class="eyebrow">CONVENIENT CHECKOUT</span>
+                    <h2 id="paymentTitle"><span>Secure payments</span></h2>
+                    <p>Choose from trusted payment options across Bangladesh.</p>
+                </div>
+                <div class="payment-logos" aria-label="Payment methods">
+                    <div class="payment-logo payment-visa" role="img" aria-label="Visa"><span>VISA</span></div>
+                    <div class="payment-logo payment-mastercard" role="img" aria-label="Mastercard"><span class="mastercard-mark"><i></i><i></i></span><span class="payment-name">mastercard</span></div>
+                    <div class="payment-logo payment-brac" role="img" aria-label="BRAC Bank"><span class="bank-mark">BRAC</span><span class="payment-name">BANK</span></div>
+                    <div class="payment-logo payment-dbbl" role="img" aria-label="Dutch-Bangla Bank"><span class="bank-mark">DBBL</span><span class="payment-name">DUTCH-BANGLA BANK</span></div>
+                    <div class="payment-logo payment-city" role="img" aria-label="City Bank"><span class="bank-mark">CITY</span><span class="payment-name">BANK</span></div>
+                    <div class="payment-logo payment-islami" role="img" aria-label="Islami Bank"><span class="bank-mark">IBBL</span><span class="payment-name">ISLAMI BANK</span></div>
+                    <div class="payment-logo payment-mtb" role="img" aria-label="Mutual Trust Bank"><span class="bank-mark">MTB</span><span class="payment-name">MUTUAL TRUST BANK</span></div>
+                    <div class="payment-logo payment-bkash" role="img" aria-label="bKash"><span>bKash</span></div>
+                    <div class="payment-logo payment-rocket" role="img" aria-label="Rocket"><span class="rocket-mark">◉</span><span>Rocket</span></div>
+                    <div class="payment-logo payment-upay" role="img" aria-label="upay"><span>upay</span></div>
+                </div>
+                <p class="payment-note">Payment methods shown for display. A payment gateway must be connected to accept payments.</p>
+            </div>
+        </section>
+
+        <div class="container copyright"><p>© 2026 BU SHOP. All rights reserved.</p><a href="#home">Back to top ↑</a></div>
+    </footer>
+</body>
+</html>
